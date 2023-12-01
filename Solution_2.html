@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e8f3fe;
+            font-family: 'Abel', sans-serif;
+            font-family: 'Actor', sans-serif;
+        }
+        .card{
+            background-color: #fff;
+            width: 400px;
+            height: 520px;
+            /* text-align: center; */
+            padding: 10px 50px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            gap: 10px;
+        }
+        input{
+            width: 100%;
+            padding: 6px 2px;
+            /* border: none; */
+            /* border-bottom: 2px solid rgba(128, 128, 128, 0.744); */
+            transition: all .2s ease-in;
+        }   
+
+        .btn{
+            padding-top: 10px;
+            margin-left: 11px;
+        }
+        button{
+            background-color: #000;
+            width: 100%;
+            height: 35px;
+            color: #fff;
+            border: none;
+            transition: all 2s ease-in;
+            border-radius: 4px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1 style="text-align: center;">Signup</h1>
+
+        <label for="user">Name:</label>
+        <input type="text" id="user">
+
+        <label for="dropdown">Batch:</label>
+            <input list="options" id="dropdown" >
+                <datalist id="options">
+                    <option value="Sigma 1.0">
+                    <option value="Sigma 2.0">
+                    <option value="Sigma 3.0">
+                    <option value="Sigma 4.0">
+                </datalist>
+
+        <label for="age">Age:</label>
+        <input type="number" name="" id="age">
+
+        <label for="email">Email:</label>
+        <input type="email" name="" id="email">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+
+        <div class="btn">
+            <button>Signup</button>
+        </div>
+        
+    </div>
+</body>
+</html>
